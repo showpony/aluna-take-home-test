@@ -25,6 +25,8 @@ func getDataTypeName(for identifier: String) -> String? {
             description = "Distance Walking + Running"
         case .sixMinuteWalkTestDistance:
             description = "Six-Minute Walk"
+        case .walkingSpeed:
+            description = "Walking Speed"
         default:
             break
         }

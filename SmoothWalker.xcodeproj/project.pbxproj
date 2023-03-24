@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90A188229CE0F27008F52DA /* WalkingSpeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A188129CE0F27008F52DA /* WalkingSpeedTableViewController.swift */; };
+		C90A188629CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A188529CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift */; };
+		C90A188829CE4149008F52DA /* WalkingSpeedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A188729CE4149008F52DA /* WalkingSpeedDataViewController.swift */; };
+		C90A188A29CE418A008F52DA /* WalkingSpeedChartDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A188929CE418A008F52DA /* WalkingSpeedChartDataTableViewController.swift */; };
 		EB12722B24859C1600548CD1 /* DataTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */; };
 		EB12722D2485BA9400548CD1 /* HealthDataTypeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */; };
 		EB12722F2485C83E00548CD1 /* EmptyDataBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722E2485C83E00548CD1 /* EmptyDataBackgroundView.swift */; };
@@ -41,7 +45,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		C90A188129CE0F27008F52DA /* WalkingSpeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSpeedTableViewController.swift; sourceTree = "<group>"; };
+		C90A188529CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSpeedQueryTableViewController.swift; sourceTree = "<group>"; };
+		C90A188729CE4149008F52DA /* WalkingSpeedDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSpeedDataViewController.swift; sourceTree = "<group>"; };
+		C90A188929CE418A008F52DA /* WalkingSpeedChartDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSpeedChartDataTableViewController.swift; sourceTree = "<group>"; };
 		DDC3EAD6D9404AADDCC92FF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypeTableViewCell.swift; sourceTree = "<group>"; };
 		EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataTypeValue.swift; sourceTree = "<group>"; };
@@ -67,7 +75,7 @@
 		EB9525BF2474C9C2001B5178 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		EB9525C12475BD41001B5178 /* HealthKitSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSupport.swift; sourceTree = "<group>"; };
 		EBEF213B2462289B0055F482 /* FeedItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = ACKNOWLEDGMENTS.txt; sourceTree = "<group>"; };
+		F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = ACKNOWLEDGMENTS.txt; sourceTree = "<group>"; };
 		F9907AEF2458947C00987667 /* SmoothWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9907AF22458947C00987667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9907AF42458947C00987667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +85,7 @@
 		F9907B002458947D00987667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9907B06245894E600987667 /* SmoothWalker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmoothWalker.entitlements; sourceTree = "<group>"; };
 		F9907B08245894E600987667 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +107,6 @@
 				FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */,
 				F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */,
 			);
-			name = LICENSE;
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
@@ -117,6 +124,9 @@
 				EB1272322485D5D200548CD1 /* DataTableViewController.swift */,
 				EB9525B42474C282001B5178 /* HealthDataTableViewController.swift */,
 				EB9525B92474C8F2001B5178 /* ChartTableViewController.swift */,
+				C90A188729CE4149008F52DA /* WalkingSpeedDataViewController.swift */,
+				C90A188929CE418A008F52DA /* WalkingSpeedChartDataTableViewController.swift */,
+				C90A188529CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift */,
 				EB305B7B2485D99B007A7694 /* HealthQueryTableViewController.swift */,
 			);
 			path = "Table View Controllers";
@@ -192,6 +202,7 @@
 				EB9525B62474C396001B5178 /* WeeklyDataTableViewController.swift */,
 				EB644F9E24730E2B00CF27F0 /* MobilityChartDataViewController.swift */,
 				EB9525BB2474C930001B5178 /* WeeklyReportTableViewController.swift */,
+				C90A188129CE0F27008F52DA /* WalkingSpeedTableViewController.swift */,
 			);
 			name = "View Controllers";
 			path = "Main View Controllers";
@@ -353,7 +364,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB12722D2485BA9400548CD1 /* HealthDataTypeValue.swift in Sources */,
+				C90A188829CE4149008F52DA /* WalkingSpeedDataViewController.swift in Sources */,
 				F9907AF72458947C00987667 /* FeedItemViewController.swift in Sources */,
+				C90A188229CE0F27008F52DA /* WalkingSpeedTableViewController.swift in Sources */,
 				EB9525BE2474C9A2001B5178 /* SplashScreenViewController.swift in Sources */,
 				EB9525BA2474C8F2001B5178 /* ChartTableViewController.swift in Sources */,
 				EB644FA1247311DF00CF27F0 /* Network.swift in Sources */,
@@ -365,6 +378,7 @@
 				EB326B50246B1B5700FEFD08 /* HealthData.swift in Sources */,
 				EB9525C22475BD41001B5178 /* HealthKitSupport.swift in Sources */,
 				EB9525BC2474C930001B5178 /* WeeklyReportTableViewController.swift in Sources */,
+				C90A188A29CE418A008F52DA /* WalkingSpeedChartDataTableViewController.swift in Sources */,
 				EBEF213C2462289B0055F482 /* FeedItemCollectionViewCell.swift in Sources */,
 				F9907AF32458947C00987667 /* AppDelegate.swift in Sources */,
 				F9907AF52458947C00987667 /* SceneDelegate.swift in Sources */,
@@ -373,6 +387,7 @@
 				EB1272332485D5D200548CD1 /* DataTableViewController.swift in Sources */,
 				EB326B4E246B16AD00FEFD08 /* MainTabViewController.swift in Sources */,
 				EB48C1CA246B3A0300AE8FE3 /* ChartViewStyle.swift in Sources */,
+				C90A188629CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift in Sources */,
 				EB48C1C4246B351C00AE8FE3 /* CareKitSupport.swift in Sources */,
 				EB644F9F24730E2B00CF27F0 /* MobilityChartDataViewController.swift in Sources */,
 				EB9525C02474C9C2001B5178 /* WelcomeViewController.swift in Sources */,
