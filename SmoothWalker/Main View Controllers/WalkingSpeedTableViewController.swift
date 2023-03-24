@@ -8,7 +8,7 @@ A table view controller that displays a chart and table view with health data sa
 import UIKit
 import HealthKit
 
-class WalkingSpeedTableViewController: HealthQueryTableViewController {
+class WalkingSpeedTableViewController: WalkingSpeedQueryTableViewController {
     
     /// The date from the latest server response.
     private var dateLastUpdated: Date?

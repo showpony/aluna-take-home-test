@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C90A188229CE0F27008F52DA /* WalkingSpeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A188129CE0F27008F52DA /* WalkingSpeedTableViewController.swift */; };
+		C90A188629CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A188529CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift */; };
 		EB12722B24859C1600548CD1 /* DataTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */; };
 		EB12722D2485BA9400548CD1 /* HealthDataTypeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */; };
 		EB12722F2485C83E00548CD1 /* EmptyDataBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722E2485C83E00548CD1 /* EmptyDataBackgroundView.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		C90A188129CE0F27008F52DA /* WalkingSpeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSpeedTableViewController.swift; sourceTree = "<group>"; };
+		C90A188529CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSpeedQueryTableViewController.swift; sourceTree = "<group>"; };
 		DDC3EAD6D9404AADDCC92FF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypeTableViewCell.swift; sourceTree = "<group>"; };
 		EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataTypeValue.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				EB9525B42474C282001B5178 /* HealthDataTableViewController.swift */,
 				EB9525B92474C8F2001B5178 /* ChartTableViewController.swift */,
 				EB305B7B2485D99B007A7694 /* HealthQueryTableViewController.swift */,
+				C90A188529CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift */,
 			);
 			path = "Table View Controllers";
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				EB1272332485D5D200548CD1 /* DataTableViewController.swift in Sources */,
 				EB326B4E246B16AD00FEFD08 /* MainTabViewController.swift in Sources */,
 				EB48C1CA246B3A0300AE8FE3 /* ChartViewStyle.swift in Sources */,
+				C90A188629CE1CD0008F52DA /* WalkingSpeedQueryTableViewController.swift in Sources */,
 				EB48C1C4246B351C00AE8FE3 /* CareKitSupport.swift in Sources */,
 				EB644F9F24730E2B00CF27F0 /* MobilityChartDataViewController.swift in Sources */,
 				EB9525C02474C9C2001B5178 /* WelcomeViewController.swift in Sources */,
