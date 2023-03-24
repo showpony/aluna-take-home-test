@@ -9,7 +9,7 @@ import UIKit
 import HealthKit
 import CareKitUI
 
-class WalkingSpeedQueryTableViewController: ChartTableViewController, HealthQueryDataSource {
+class WalkingSpeedQueryTableViewController: WalkingSpeedChartDataTableViewController, HealthQueryDataSource {
         
     var queryPredicate: NSPredicate? = nil
     var queryAnchor: HKQueryAnchor? = nil
@@ -106,17 +106,17 @@ class WalkingSpeedQueryTableViewController: ChartTableViewController, HealthQuer
     /// Override `reloadData` to update `chartView` before reloading `tableView` data.
     override func reloadData() {
         DispatchQueue.main.async {
-            self.chartView.applyDefaultConfiguration()
+            self.dailyWalkingSpeedChartView.applyDefaultConfiguration()
             
             let dateLastUpdated = Date()
-            self.chartView.headerView.detailLabel.text = createChartDateLastUpdatedLabel(dateLastUpdated)
-            self.chartView.headerView.titleLabel.text = getDataTypeName(for: self.dataTypeIdentifier)
+            self.dailyWalkingSpeedChartView.headerView.detailLabel.text = createChartDateLastUpdatedLabel(dateLastUpdated)
+            self.dailyWalkingSpeedChartView.headerView.titleLabel.text = "Walking Speed"
             
             self.dataValues.sort { $0.startDate < $1.startDate }
             
             let sampleStartDates = self.dataValues.map { $0.startDate }
             
-            self.chartView.graphView.horizontalAxisMarkers = createHorizontalAxisMarkers(for: sampleStartDates)
+            self.dailyWalkingSpeedChartView.graphView.horizontalAxisMarkers = createHorizontalAxisMarkers(for: sampleStartDates)
             
             let dataSeries = self.dataValues.compactMap { CGFloat($0.value) }
             guard
@@ -126,7 +126,7 @@ class WalkingSpeedQueryTableViewController: ChartTableViewController, HealthQuer
                 return
             }
             
-            self.chartView.graphView.dataSeries = [
+            self.dailyWalkingSpeedChartView.graphView.dataSeries = [
                 OCKDataSeries(values: dataSeries, title: unitTitle)
             ]
             

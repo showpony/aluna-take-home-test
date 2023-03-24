@@ -86,8 +86,17 @@ func getLastWeekStartDate(from date: Date = Date()) -> Date {
     return Calendar.current.date(byAdding: .day, value: -6, to: date)!
 }
 
+func getLastMonthStartDate(from date: Date = Date()) -> Date {
+    return Calendar.current.date(byAdding: .month, value: -1, to: date)!
+}
+
 func createLastWeekPredicate(from endDate: Date = Date()) -> NSPredicate {
     let startDate = getLastWeekStartDate(from: endDate)
+    return HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+}
+
+func createLastMonthPredicate(from endDate: Date = Date()) -> NSPredicate {
+    let startDate = getLastMonthStartDate(from: endDate)
     return HKQuery.predicateForSamples(withStart: startDate, end: endDate)
 }
 

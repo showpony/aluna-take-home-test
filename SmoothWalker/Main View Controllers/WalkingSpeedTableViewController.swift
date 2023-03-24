@@ -19,7 +19,7 @@ class WalkingSpeedTableViewController: WalkingSpeedQueryTableViewController {
         super.init(dataTypeIdentifier: HKQuantityTypeIdentifier.sixMinuteWalkTestDistance.rawValue)
         
         // Set weekly predicate
-        queryPredicate = createLastWeekPredicate()
+        queryPredicate = createLastMonthPredicate()
     }
     
     required init?(coder: NSCoder) {
@@ -93,10 +93,10 @@ class WalkingSpeedTableViewController: WalkingSpeedQueryTableViewController {
         
         // Change axis to use weekdays for six-minute walk sample
         DispatchQueue.main.async {
-            self.chartView.graphView.horizontalAxisMarkers = createHorizontalAxisMarkers()
+            self.dailyWalkingSpeedChartView.graphView.horizontalAxisMarkers = createHorizontalAxisMarkers()
             
             if let dateLastUpdated = self.dateLastUpdated {
-                self.chartView.headerView.detailLabel.text = createChartDateLastUpdatedLabel(dateLastUpdated)
+                self.dailyWalkingSpeedChartView.headerView.detailLabel.text = createChartDateLastUpdatedLabel(dateLastUpdated)
             }
         }
     }
